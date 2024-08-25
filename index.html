@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar uma conta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+    <div class="alterar-modo">
+        <h1 class="modo">Alternar modo</h1>
+        <div class="scroll" id="scroll">
+            <div class="indicator"></div>
+        </div>
+    </div>    
+
+    <script src="main.js"></script>
+
+
+    <section class="container">
+        <h1 class="titulo"> Criar uma conta</h1>
+        <form>
+            <div class="campo">
+                <label for="fullname">Nome Completo:</label><br>
+                <input type="text" id="name" name="fullname"><br>
+            </div>
+
+            <div class="campo">
+                <label for="birth">Data de Nascimento:</label><br>
+                <input type="date" id="birth" name="birth""><br>
+            </div>
+
+            <div class="campo">
+                <p class="campo">Sexo:</p>
+                <input type="radio" name="sexo" id="M" value="Masculino">
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="F" value="Feminino">
+                <label for="sexo">Feminino</label><br>
+            </div>
+
+            <div class="campo">
+                <label for="email">Endereço de Email</label><br>
+                <input type="email" name="email" id="email"><br>
+            </div>
+
+            <div class="campo"> 
+                <label for="senha">Senha</label><br>
+                <input type="password" name="senha" id="senha">
+            </div> 
+            
+            <div class="enviar">
+                <input type="submit" value="Cadastrar">
+            </div>
+
+            <p class="oauth">Faça login com</p>
+
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-google"></a>
+
+
+        </form>
+    </section>
+</body>
+</html>
